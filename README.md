@@ -1,29 +1,24 @@
-# Editor de Niveles Sokoban
+# Sokoban Level Editor
 
-Vídeo: https://youtu.be/v95VmtJh-xE
+This is a level editor for the game Sokoban, where you can create and edit levels using an intuitive graphical interface.
 
-Este es un editor de niveles para el juego Sokoban, donde puedes crear y editar niveles mediante una interfaz gráfica intuitiva.
+## Requirements
 
-## Requisitos
+- Unity 2022.3.20f1 or higher.
 
-- Unity 2022.3.20f1 o superior.
+## Functionality
 
-## Funcionamiento
+The editor allows you to create and edit Sokoban levels using a two-dimensional matrix. You can select different sprites to represent various game elements, such as the player, boxes, targets, and empty spaces. Levels are saved in C:/SokobanLevels/. Remember to create all 10 levels of the game to have a complete experience.
 
-El editor te permite crear y editar niveles de Sokoban utilizando una matriz bidimensional. Puedes seleccionar diferentes sprites para representar distintos elementos del juego, como jugador, cajas, objetivos y espacios vacíos.
-Los niveles se guardan en C:/SokobanLevels/
-Recuerda que debes crear los 10 niveles del juego para poder tener una experiencia completa.
+### Controls
 
-### Controles
+- Click on a sprite in the palette to select it as the current sprite.
+- Click on a cell in the matrix to place the current sprite in that location.
+- Use the "Open CSV" and "Save CSV" buttons to load and save levels in CSV format.
+- Use the "Level Selector" text field to specify the name of the level you want to open or save.
 
-- Haz clic en un sprite de la paleta para seleccionarlo como el sprite actual.
-- Haz clic en una celda de la matriz para colocar el sprite actual en esa ubicación.
-- Utiliza los botones "Open CSV" y "Save CSV" para cargar y guardar niveles en formato CSV.
-- Utiliza el campo de texto "Selector de Nivel" para especificar el nombre del nivel que deseas abrir o guardar.
+### Player and Target Verification
 
-### Comprobación de Jugadores y Objetivos
+Before saving a level, the editor performs a check to ensure that there is exactly one player and that the number of targets matches the number of boxes. If there is any error in the level configuration, an error message will be displayed and the level will not be saved.
 
-Antes de guardar un nivel, el editor realiza una comprobación para garantizar que haya exactamente un jugador y que la cantidad de objetivos coincida con la cantidad de cajas. Si hay algún error en la configuración del nivel, se mostrará un mensaje de error y no se guardará el nivel.
-
-¡Disfruta creando tus propios desafíos de Sokoban!
-
+Enjoy creating your own Sokoban challenges!
